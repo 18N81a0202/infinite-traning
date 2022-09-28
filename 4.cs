@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Exercise12
+public class 
 {
     static void Main(string[] args)
     {
