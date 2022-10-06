@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>day4dotnet.stringuppercase</StartupObject>
+    <StartupObject>day4dotnet.Details</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="customer.cs" />
+    <Compile Include="Doctor.cs" />
+    <Compile Include="scholarship.cs" />
     <Compile Include="saledetails.cs" />
     <Compile Include="stringchar.cs" />
     <Compile Include="stringuppercase.cs" />
