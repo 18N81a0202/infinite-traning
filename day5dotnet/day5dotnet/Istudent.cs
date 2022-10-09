@@ -35,11 +35,11 @@ namespace Day7DotNet
         {
             get { return name; }
             set { name = value; }
+           public void ShowDetails()
+           {
+            Console.WriteLine("Student name :" + Name + " " + ", and i'd is: " +id);
+           }
             
-             public void ShowDetails()
-               {
-                 Console.WriteLine("student name : " + Name + " " + " , and i'd is: " + id);
-               }
         }
 
     }
