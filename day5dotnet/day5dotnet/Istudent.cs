@@ -9,6 +9,8 @@ namespace Day7DotNet
     interface Istudent
     {
         string Name { get; set; }
+        string id { get; set;}
+        void ShowDetails();
 
     }
     class Dayscholar : Istudent
@@ -18,6 +20,11 @@ namespace Day7DotNet
 
 
         public int id { get; set; }
+         public void ShowDetails()
+        {
+            Console.WriteLine("Student name :" + Name + " " + ", and i'd is: " +id);
+        }
+
     }
     class Resident : Istudent
     {
@@ -28,6 +35,11 @@ namespace Day7DotNet
         {
             get { return name; }
             set { name = value; }
+            
+             public void ShowDetails()
+               {
+                 Console.WriteLine("student name : " + Name + " " + " , and i'd is: " + id);
+               }
         }
 
     }
@@ -42,6 +54,8 @@ namespace Day7DotNet
             r.Name = "supriya";
             r.id = 6;
             Console.WriteLine(" Dayscholar Name {0}, id is {1} Resident name {2},id is {3} ", d.Name, d.id, r.Name, r.id);
+            d.ShowDetails();
+            r.ShowDetails();
             Console.Read();
         }
     }
