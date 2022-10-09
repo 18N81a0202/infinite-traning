@@ -1,0 +1,51 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Day7DotNet
+{
+    interface Istudent
+    {
+        string Name { get; set; }
+
+    }
+    class Dayscholar : Istudent
+    {
+
+        public string Name { get; set; }
+
+
+        public int id { get; set; }
+    }
+    class Resident : Istudent
+    {
+        string name;
+        public int id { get; set; }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+    }
+    class InterfaceEg3
+    {
+        static void Main()
+        {
+            Dayscholar d = new Dayscholar();
+            d.Name = "harsha";
+            d.id = 2;
+            Resident r = new Resident();
+            r.Name = "supriya";
+            r.id = 6;
+            Console.WriteLine(" Dayscholar Name {0}, id is {1} Resident name {2},id is {3} ", d.Name, d.id, r.Name, r.id);
+            Console.Read();
+        }
+    }
+
+ 
+
+}
